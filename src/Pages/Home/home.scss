@@ -1,0 +1,265 @@
+.wrapper {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 240px;
+}
+
+.nav {
+  display: grid;
+  place-items: center;
+  margin-bottom: 125px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__item + .nav__item {
+  margin-left: 40px;
+}
+
+.nav__links {
+  font-style: normal;
+  font-weight: 550;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero__heading {
+  max-width: 860px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #ffffff;
+}
+
+.hero__btn {
+  display: block;
+  margin: 0 auto;
+  width: 225px;
+  padding: 18px 0;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.directions__btn {
+  display: block;
+  width: 225px;
+  padding: 18px 0;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  border: 3px solid #000;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.directions__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.directions {
+  padding-top: 85px;
+}
+
+.directions__info {
+  max-width: 515px;
+  width: 100%;
+}
+
+.directions__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 46px;
+  color: #121212;
+}
+
+.directions__text {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #121212;
+}
+
+.directions__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.directions__item-info {
+  transition: 0.2s ease all;
+}
+
+.directions__item {
+  border: 1px solid black;
+  cursor: pointer;
+  &-info {
+    padding: 28px;
+  }
+  &:hover {
+    .directions__item-info {
+      background: #fff;
+      transform: translate(10px, -10px);
+    }
+  }
+}
+
+.directions__item-heading {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.directions__item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #121212;
+}
+
+.hero__back-linear1,
+.hero__back-linear2 {
+  position: absolute;
+  width: 1320px;
+  height: 740px;
+  top: -600px;
+  right: -340px;
+}
+
+.hero__back-linear2 {
+  position: absolute;
+  width: 1320px;
+  height: 740px;
+  top: -1000px;
+  left: -840px;
+}
+
+.hero__background1 {
+  position: absolute;
+  z-index: -1;
+
+  width: 854px;
+  height: 854px;
+  border-radius: 50%;
+  filter: blur(424px);
+  background-color: #ffff00;
+}
+
+.hero__background2 {
+  position: absolute;
+  z-index: -1;
+
+  width: 1320px;
+  height: 1320px;
+  border-radius: 50%;
+  filter: blur(314px);
+  background-color: #ffd600;
+}
+
+.hero__background3 {
+  position: absolute;
+  z-index: -1;
+
+  width: 1320px;
+  height: 1320px;
+  border-radius: 50%;
+  filter: blur(314px);
+  background-color: #ff0000;
+}
+
+.hero__background4 {
+  position: absolute;
+  z-index: -1;
+
+  width: 836px;
+  height: 836px;
+  border-radius: 50%;
+  filter: blur(424px);
+  background-color: #4b0000;
+}
+
+// ----------------------------------
+
+.hero__background5 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 854px;
+  height: 854px;
+  border-radius: 50%;
+  filter: blur(424px);
+  background-color: #ffff00;
+}
+
+.hero__background6 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 1320px;
+  height: 1320px;
+  border-radius: 50%;
+  filter: blur(314px);
+  background-color: #ffd600;
+}
+
+.hero__background7 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 1320px;
+  height: 1320px;
+  border-radius: 50%;
+  filter: blur(314px);
+  background-color: #ff0000;
+}
+
+.hero__background8 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 836px;
+  height: 836px;
+  border-radius: 50%;
+  filter: blur(424px);
+  background-color: #4b0000;
+}
+
+.main {
+  z-index: 1000;
+  background-color: #d9d9d9;
+}
