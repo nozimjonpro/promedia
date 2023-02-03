@@ -6,6 +6,7 @@ import Poart from "../../Assets/Img/poart_section.png";
 import Action from "../../Assets/Img/action.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import TextRotation from "../../Components/TextRotation/TextRotation";
 
 export default function Home() {
   const firstImgRef = useRef(null);
@@ -14,11 +15,7 @@ export default function Home() {
   const headerRef = useRef(null);
   const [counterOn, setCounterOn] = useState(false);
 
-  useEffect(() => {
-    document.onmouseover = (e) => {
-      console.log(e.target);
-    };
-  }, []);
+  useEffect(() => {}, []);
   return (
     <div className="outer__wrapper">
       <header className="header wrapper" ref={headerRef}>
@@ -197,7 +194,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <setion className="service">
+        <section className="service">
           <div className="container">
             <h2 className="service__heading">
               Top services we order{" "}
@@ -244,7 +241,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </setion>
+        </section>
         <section className="portfolio">
           <div className="container">
             <h2 className="portfolio__heading">
@@ -257,6 +254,7 @@ export default function Home() {
               </strong>{" "}
               just for you
             </h2>
+            <TextRotation></TextRotation>
           </div>
         </section>
       </main>
