@@ -3,6 +3,7 @@ import "./home.scss";
 import Logo from "../../Assets/Img/logo.svg";
 import { Link } from "react-router-dom";
 import Poart from "../../Assets/Img/poart_section.png";
+import Action from "../../Assets/Img/action.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
@@ -200,28 +201,64 @@ export default function Home() {
           <div className="container">
             <h2 className="service__heading">
               Top services we order{" "}
-              <strong className="sevice__heading--strong">✺</strong>just for you
+              <strong
+                className="sevice__heading--strong"
+                style={{ color: "#d8250e" }}
+              >
+                ✺
+              </strong>
+              just for you
             </h2>
             <ul className="service__list">
               <li className="service__item">
-                <p className="service__text"></p>
-                <img className="service__item-img" src="" alt="" />
+                <p className="service__text">ProMovie Video studio</p>
+                <img
+                  className="service__item-img"
+                  src={Action}
+                  alt="action jpg format"
+                />
               </li>
               <li className="service__item">
-                <p className="service__text"></p>
-                <img className="service__item-img" src="" alt="" />
+                <p className="service__text">ProMovie Video studio</p>
+                <img
+                  className="service__item-img"
+                  src={Action}
+                  alt="action jpg format"
+                />
               </li>
               <li className="service__item">
-                <p className="service__text"></p>
-                <img className="service__item-img" src="" alt="" />
+                <p className="service__text">ProMovie Video studio</p>
+                <img
+                  className="service__item-img"
+                  src={Action}
+                  alt="action jpg format"
+                />
               </li>
               <li className="service__item">
-                <p className="service__text"></p>
-                <img className="service__item-img" src="" alt="" />
+                <p className="service__text">ProMovie Video studio</p>
+                <img
+                  className="service__item-img"
+                  src={Action}
+                  alt="action jpg format"
+                />
               </li>
             </ul>
           </div>
         </setion>
+        <section className="portfolio">
+          <div className="container">
+            <h2 className="portfolio__heading">
+              Our portfolio, we order{" "}
+              <strong
+                className="sevice__heading--strong"
+                style={{ color: "#d8250e" }}
+              >
+                ✺
+              </strong>{" "}
+              just for you
+            </h2>
+          </div>
+        </section>
       </main>
     </div>
   );
