@@ -83,6 +83,7 @@
 
 .directions {
   padding-top: 85px;
+  margin-bottom: 100px;
 }
 
 .directions__info {
@@ -262,4 +263,103 @@
 .main {
   z-index: 1000;
   background-color: #d9d9d9;
+}
+
+// +++++++++++++++++++++++++++++++++ Part section styling
+
+.poart {
+  margin-bottom: 85px;
+}
+
+.poart .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poart__info {
+  max-width: 640px;
+  width: 100%;
+}
+
+.poart__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 46px;
+  color: #121212;
+}
+
+.poart__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #121212;
+}
+
+.poart__btn {
+  display: inline-block;
+  width: 263px;
+  margin-bottom: 100px;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #121212;
+  border: 2px solid #121212;
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+.poart__counter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.poart__counter-item {
+  max-width: 120px;
+}
+
+.poart__item-heading {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 46px;
+  color: #121212;
+}
+
+.poart__item-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #121212;
+}
+
+.poart__art {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 1000px;
+}
+
+// ++++++++++++++++++++++++ Services section styling
+
+.service__heading {
+  margin-right: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 46px;
+  &--strong {
+  }
 }

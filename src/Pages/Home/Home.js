@@ -1,13 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home.scss";
 import Logo from "../../Assets/Img/logo.svg";
 import { Link } from "react-router-dom";
+import Poart from "../../Assets/Img/poart_section.png";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 export default function Home() {
   const firstImgRef = useRef(null);
   const secondImgRef = useRef(null);
   const heroRef = useRef(null);
   const headerRef = useRef(null);
+  const [counterOn, setCounterOn] = useState(false);
 
   useEffect(() => {
     document.onmouseover = (e) => {
@@ -146,10 +150,78 @@ export default function Home() {
                 techniques for gathering m
               </p>
               <button className="poart__btn">заказать проект</button>
+              <ScrollTrigger
+                onEnter={() => setCounterOn(true)}
+                onExit={() => setCounterOn(false)}
+              >
+                <ul className="poart__counter-list">
+                  <li className="poart__counter-item">
+                    <h3 className="poart__item-heading">
+                      0
+                      {counterOn && (
+                        <CountUp start={0} end={3} duration={3} delay={0} />
+                      )}
+                    </h3>
+                    <p className="poart__item-text">
+                      Using videos, quizzes, and interactive di
+                    </p>
+                  </li>
+                  <li className="poart__counter-item">
+                    <h3 className="poart__item-heading">
+                      {counterOn && (
+                        <CountUp start={0} end={93} duration={3} delay={0} />
+                      )}
+                      +
+                    </h3>
+                    <p className="poart__item-text">
+                      Using videos, quizzes, and interactive di
+                    </p>
+                  </li>
+                  <li className="poart__counter-item">
+                    <h3 className="poart__item-heading">
+                      {counterOn && (
+                        <CountUp start={0} end={843} duration={3} delay={0} />
+                      )}
+                      +
+                    </h3>
+                    <p className="poart__item-text">
+                      Using videos, quizzes, and interactive di
+                    </p>
+                  </li>
+                </ul>
+              </ScrollTrigger>
             </div>
-            <img className="poart__image" src="" alt="" />
+            <div className="poart__art">
+              <img className="poart__image" src={Poart} alt="" />
+            </div>
           </div>
         </section>
+        <setion className="service">
+          <div className="container">
+            <h2 className="service__heading">
+              Top services we order{" "}
+              <strong className="sevice__heading--strong">✺</strong>just for you
+            </h2>
+            <ul className="service__list">
+              <li className="service__item">
+                <p className="service__text"></p>
+                <img className="service__item-img" src="" alt="" />
+              </li>
+              <li className="service__item">
+                <p className="service__text"></p>
+                <img className="service__item-img" src="" alt="" />
+              </li>
+              <li className="service__item">
+                <p className="service__text"></p>
+                <img className="service__item-img" src="" alt="" />
+              </li>
+              <li className="service__item">
+                <p className="service__text"></p>
+                <img className="service__item-img" src="" alt="" />
+              </li>
+            </ul>
+          </div>
+        </setion>
       </main>
     </div>
   );
